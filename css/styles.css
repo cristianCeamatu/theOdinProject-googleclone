@@ -1,0 +1,252 @@
+/* Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #ffffff;
+    font: 14px/1.5 sans-serif;
+    color: #262626;
+    overflow: hidden;
+}
+
+button {
+    border: none;
+    box-shadow: none;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+/* Globals */
+.container {
+    margin: 0 20px;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    border-bottom: 1px solid #565656;
+}
+
+.btn2 {
+    display: inline;
+    padding: 10px 20px;
+    color: rgb(8, 85, 173);
+    background: #ffffff;
+    border-radius: 5px;
+    border: 1px solid #8d8c8c1c;
+}
+
+
+.btn2:hover {
+    background: #cecece63;
+}
+
+/* Nav-main */
+.nav-main {
+    margin-top: 10px;
+}
+
+.nav-main ul {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.nav-main ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-main ul li a {
+    font-size: 12px;
+    padding: 5px 5px 0 5px;
+
+}
+
+.nav-main ul li img.menu-btn {
+    width: 20px;
+    margin-left: 5px;
+}
+
+.nav-main ul li img.account-btn {
+    width: 30px;
+    border-radius: 50%;
+    margin-left: 5px;
+}
+
+.nav-apps {
+    position: absolute;
+    z-index: 2;
+    top: 50px;
+    right: 20px;
+    text-align: center;
+    background: #ffffff;
+    height: 450px;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    -webkit-box-shadow: -5px 5px 10px 0px rgba(161,140,161,1);
+    -moz-box-shadow: -5px 5px 10px 0px rgba(161,140,161,1);
+    box-shadow: -5px 5px 10px 0px rgba(161,140,161,1);
+    display: none;
+}
+
+.nav-apps.show {
+    display: block;
+}
+
+.nav-apps ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 15px;
+}
+
+.nav-apps ul:first-child {
+    border-bottom: 1px solid #74747471;
+    padding-bottom: 20px;
+}
+
+.nav-apps .nav-app {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 10px 20px;
+}
+.nav-apps img {
+    width: 50px;
+    border-radius: 50%;
+    margin-bottom: 5px;
+}
+
+.nav-apps.show button {
+    margin-bottom: 20px;
+}
+
+/* Nav account */
+.nav-account {
+    display: none;
+}
+
+/* Showcase */
+.showcase {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    gap: 20px;
+    padding-bottom: 320px;
+    color: #a5a5a5dc;
+}
+.showcase form i.fa-search {
+    position: relative;
+    right: -38px;
+}
+
+.showcase form .keyboard-link {
+    position: relative;
+    left: -38px;
+    color: #636262f8;
+}
+.showcase form input {
+    outline: none;
+    width: 480px;
+    padding: 10px 50px;
+    font-size: 16px;
+    border: 1px solid #e7e7e7b6;
+    background: #ffffff;
+    border-radius: 50px;
+}
+
+.showcase form ul {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.showcase form ul li {
+    padding: 10px;
+}
+
+.showcase form ul li .btn1 {
+    padding: 10px 20px;
+    border-radius: 3px;
+    background-color: #d3d2d271;
+    color: #262626d0;
+    font-size: 13px;
+}
+
+.showcase .languages {
+    display: flex;
+    gap: 15px;
+    font-size: 12px;
+    color: #262626;
+}
+
+.showcase .languages ul {
+    display: flex;
+    gap: 10px;
+}
+
+/* Footer */
+.footer-main {
+    position: absolute;
+    bottom: 0;
+    left:0;
+    right: 0;
+    background: #dfdede71;
+    color: #262626bb;
+    font-size: 14px;
+}
+
+.footer-main p {
+    border: 1px solid #dbdbdb;
+    padding: 10px 30px;
+}
+
+.footer-main .footer-links {
+    width: 100%;
+    gap: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.footer-main .footer-links ul {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding-bottom: 10px;
+}
+
+.footer-main .footer-links .footer-links-left {
+    float: left;
+    margin-left: 30px;
+}
+
+.footer-main .footer-links .footer-links-right {
+    float: right;
+    margin-right: 30px;
+}
+
+
+.footer-main .footer-links ul li a {
+    color: #262626bb;
+}
