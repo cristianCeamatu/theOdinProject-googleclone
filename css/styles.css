@@ -252,9 +252,10 @@ a:hover {
 
 .showcase .languages ul {
     display: flex;
-    gap: 10px;
 }
-
+.showcase .languages ul li {
+    margin: 0 10px;
+}
 /* Footer */
 .footer-main {
     position: absolute;
@@ -273,16 +274,22 @@ a:hover {
 
 .footer-main .footer-links {
     width: 100%;
-    gap: 20px;
     padding-top: 15px;
     padding-bottom: 15px;
+    text-align: center;
 }
 
 .footer-main .footer-links ul {
     display: flex;
-    gap: 20px;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     padding-bottom: 10px;
+}
+
+.footer-main .footer-links ul li {
+    margin: 10px;
 }
 
 .footer-main .footer-links .footer-links-left {
@@ -306,6 +313,10 @@ a:hover {
         float: right;
     }
 
+    .nav-account .account {
+        padding: 20px 40px;
+    }
+
     .showcase .logo img {
         width: 150px;
     }
@@ -322,10 +333,12 @@ a:hover {
 
     .footer-main .footer-links .footer-links-left {
         float: none;
+        margin-left: 0;
     }
 
     .footer-main .footer-links .footer-links-right {
         float: none;
+        margin-right: 0;
     }
 }
 
