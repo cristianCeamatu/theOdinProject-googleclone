@@ -47,9 +47,17 @@ a:hover {
     border: 1px solid #8d8c8c1c;
 }
 
-
 .btn2:hover {
     background: #cecece63;
+}
+
+.sectioned {
+    border-bottom: 1px solid #74747471;
+    padding-bottom: 20px;
+}
+
+.text-fadded {
+    color: #919191;
 }
 
 /* Nav-main */
@@ -86,37 +94,29 @@ a:hover {
     margin-left: 5px;
 }
 
-.nav-apps {
+.nav-apps, .nav-account {
     position: absolute;
     z-index: 2;
-    top: 50px;
+    top: 60px;
     right: 20px;
     text-align: center;
     background: #ffffff;
+    color: #262626;
     height: 450px;
     overflow-y: scroll;
     display: flex;
     flex-direction: column;
-    border-radius: 5px;
+    border-radius: 10px;
     -webkit-box-shadow: -5px 5px 10px 0px rgba(161,140,161,1);
     -moz-box-shadow: -5px 5px 10px 0px rgba(161,140,161,1);
     box-shadow: -5px 5px 10px 0px rgba(161,140,161,1);
     display: none;
 }
 
-.nav-apps.show {
-    display: block;
-}
-
 .nav-apps ul {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     padding: 15px;
-}
-
-.nav-apps ul:first-child {
-    border-bottom: 1px solid #74747471;
-    padding-bottom: 20px;
 }
 
 .nav-apps .nav-app {
@@ -133,13 +133,62 @@ a:hover {
     margin-bottom: 5px;
 }
 
-.nav-apps.show button {
+.nav-apps button {
     margin-bottom: 20px;
 }
 
 /* Nav account */
 .nav-account {
     display: none;
+    overflow-y: hidden;
+}
+
+.nav-account .account {
+    padding: 20px 80px;
+}
+
+.nav-account .account img {
+    width: 80px;
+    border-radius: 50px;
+    margin-bottom: 20px;
+}
+
+.nav-account .account .account-info {
+    margin-bottom: 20px;
+}
+
+.nav-account .account button {
+    border-radius: 50px;
+}
+
+.nav-account .add-account {
+    text-align: left;
+    padding: 20px 40px;
+}
+
+.nav-account .logout {
+    padding: 20px;
+}
+
+.nav-account .links ul{
+    display: flex;
+    justify-content: center;
+    font-size: 11px;
+    padding: 20px;
+    gap: 10px;
+}
+
+.nav-account .btn2 {
+    color: #262626;
+}
+
+.nav-account a {
+    padding: 5px;
+}
+.nav-account a:hover {
+    text-decoration: none;
+    border-bottom: none;
+    background-color: #eeeeee;
 }
 
 /* Showcase */
@@ -249,4 +298,39 @@ a:hover {
 
 .footer-main .footer-links ul li a {
     color: #262626bb;
+}
+
+@media(max-width: 700px) {
+    .nav-main {
+        display: inline-block;
+        float: right;
+    }
+
+    .showcase .logo img {
+        width: 150px;
+    }
+
+    .showcase form input {
+        width: 300px;
+
+    }
+    .footer-main .footer-links ul {
+        float: none;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-main .footer-links .footer-links-left {
+        float: none;
+    }
+
+    .footer-main .footer-links .footer-links-right {
+        float: none;
+    }
+}
+
+
+/* Toggled classes */
+.show {
+    display: block;
 }
