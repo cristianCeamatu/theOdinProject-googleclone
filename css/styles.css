@@ -108,7 +108,7 @@ border-bottom: 1px solid #565656;
 }
 
 .nav-apps, .nav-account {
-    position: absolute;
+    position: fixed;
     z-index: 2;
     top: 60px;
     right: 20px;
@@ -365,6 +365,9 @@ border-bottom: 1px solid #565656;
     padding-right: 20px;
 }
 
+.nav-apps, .nav-account {
+    top: 80px;
+}
 
 
 /* Search page filters */
