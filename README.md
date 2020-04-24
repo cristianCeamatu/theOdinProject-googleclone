@@ -1,4 +1,4 @@
-## The Odin project
+## The Odin project - Google clone
 
 Google home search pages cloned without checking the Devtools on the real page
 
