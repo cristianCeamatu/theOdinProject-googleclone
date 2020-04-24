@@ -348,6 +348,7 @@ border-bottom: 1px solid #565656;
 
 #search-page .nav-main form input {
     width: 700px;
+    padding-left: 20px;
 }
 
 #search-page .nav-main form ul {
