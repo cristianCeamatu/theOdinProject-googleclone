@@ -79,7 +79,7 @@ a {
 .nav-main ul {
     display: flex;
     align-items: center;
-    justify-content: right;
+    justify-content: flex-end;
 }
 
 .nav-main ul li {
