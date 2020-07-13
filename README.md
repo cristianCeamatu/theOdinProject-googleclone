@@ -1,6 +1,6 @@
 # This is a Google Home and Search pages clone
 
-> The project is a clone of the google home and search pages build for [TheOdinProject](https://www.theodinproject.com/). Enjoy your videos!
+> The project is a clone of the google home and search pages build for [TheOdinProject](https://www.theodinproject.com/). Enjoy your searches!
 
 ### Homepage
 ![screenshot](./app-screenshot-full.png)
