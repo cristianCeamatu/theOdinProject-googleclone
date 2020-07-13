@@ -20,7 +20,7 @@
 
 ## Live Demo
 
-[Live Demo Link](https://cristianceamatu.github.io/theOdinProject-youtubeclone/)
+[Live Demo Link](https://cristianceamatu.github.io/theOdinProject-googleclone/)
 
 
 To get a local copy up and running follow these simple example steps.
