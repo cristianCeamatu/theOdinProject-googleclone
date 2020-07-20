@@ -1,4 +1,4 @@
-# This is a Google Home and Search pages clone
+# This is a Google Home and Search pages clone built in few hours without using the Devtools
 
 > The project is a clone of the google home and search pages build for [TheOdinProject](https://www.theodinproject.com/). Enjoy your searches!
 
